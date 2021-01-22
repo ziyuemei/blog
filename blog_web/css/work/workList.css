@@ -1,0 +1,238 @@
+/* 头部---选中tab */
+
+.head a:nth-of-type(2) {
+    color: rgb(82, 197, 243);
+}
+
+
+/* 内容区 */
+
+.content {
+    margin-top: 10px;
+    padding: 10px 16rem;
+}
+
+
+/* 内容区左侧---文章 */
+
+.content .left {
+    float: left;
+    width: 73%;
+}
+
+
+/* 分类区 */
+
+.content .tab {
+    display: inline-block;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+.content .tab a {
+    display: inline-block;
+    width: 4rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.content .tab a:hover {
+    color: rgb(82, 197, 243);
+}
+
+.content .tab a.active {
+    color: rgb(82, 197, 243);
+    font-size: 1.3rem;
+}
+
+.content .content_list .section {
+    display: none;
+}
+
+.content .content_list .selected {
+    display: block;
+}
+
+
+/* 文章列表区 */
+
+.content .left .part {
+    border-bottom: 1px solid rgba(168, 166, 166, 0.5);
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.content .left .part .part_text {
+    width: 75%;
+    height: 100%;
+}
+
+.content .left .part .part_text h1 {
+    height: 3rem;
+    line-height: 3rem;
+    user-select: none;
+}
+
+.content .left .part .part_text:hover h1 {
+    color: rgb(82, 197, 243);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.content .left .part .part_text p {
+    height: 5rem;
+    color: rgb(129, 128, 128);
+    font-size: 0.95rem;
+}
+
+.content .left .part .part_text ul {
+    height: 1.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    user-select: none;
+}
+
+.content .left .part .part_text ul li {
+    margin-right: 15px;
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.content .left .part .part_text ul li span {
+    margin-left: 3px;
+    color: rgb(129, 128, 128);
+}
+
+.content .left .part .part_text ul i {
+    display: inline-block;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    color: rgb(129, 128, 128);
+    margin-top: -3px;
+}
+
+.content .left .part .part_img {
+    width: 10rem;
+    height: 100%;
+}
+
+
+/* 内容区右侧---介绍 */
+
+.content .right {
+    float: right;
+    width: 25%;
+}
+
+.content .right .introduction,
+.content .right .message,
+.content .right .friends {
+    margin-bottom: 2rem;
+}
+
+
+/* 个人介绍 */
+
+.content .right .introduction ul {
+    padding: 10px;
+}
+
+.content .right .introduction li {
+    margin-bottom: 10px;
+}
+
+.content .right .introduction ul li:last-child {
+    margin-bottom: 0;
+}
+
+.content .right .introduction .iconfont {
+    font-size: 1.5rem;
+    color: black;
+    margin-right: 10px;
+}
+
+
+/* 留言 */
+
+.message ul,
+.friends ul {
+    padding: 10px;
+    min-height: 1rem;
+}
+
+.message li p:nth-of-type(1) {
+    height: 2rem;
+    line-height: 2rem;
+    margin: 10px 5px 10px 0;
+}
+
+.message li p:nth-of-type(1) img {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+}
+
+.message li p:nth-of-type(1) span {
+    margin-right: 10px;
+}
+
+.message li p:nth-of-type(1) span:nth-of-type(2) {
+    color: rgb(129, 128, 128);
+    font-size: 0.6rem;
+}
+
+.message li p:nth-of-type(2) {
+    min-height: 2rem;
+    line-height: 1.5rem;
+    padding: 10px;
+    font-size: 0.9rem;
+    background-color: rgba(219, 213, 213, 0.8);
+    border-left: 2px solid rgba(129, 128, 128, 0.8);
+}
+
+.message>p,
+.friends>p {
+    width: 13rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    margin: 10px auto;
+    color: #00a8ff;
+    border-radius: 20px;
+    border: 1px solid #00a8ff;
+}
+
+.message>p:hover,
+.friends>p:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: #00a8ff;
+}
+
+
+/* 友链 */
+
+.friends ul li {
+    padding: 10px;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+    border: 1px solid rgba(129, 128, 128, 0.5);
+    background-color: rgba(219, 213, 213, 0.5);
+    border-radius: 8px;
+    display: inline-block;
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+.friends ul li:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(119, 169, 175, 0.5);
+}

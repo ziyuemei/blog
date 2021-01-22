@@ -1,0 +1,9 @@
+/* 底部 */
+
+.footer {
+    height: 6rem;
+    line-height: 6rem;
+    padding: 10px 16rem;
+    border-top: 1px solid #333;
+    user-select: none;
+}
